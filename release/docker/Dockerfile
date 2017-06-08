@@ -17,10 +17,10 @@ USER farmersmarket
 
 # Set home environment variable
 ENV HOME /home/farmersmarket
-
 # Clone Farmer's Market Repository from GitHub
 WORKDIR /home/farmersmarket
 RUN git clone https://github.com/rpolishetty/FarmersMarketRegister.git
+ENV RUNTIMESCRIPT /home/farmersmarket/FarmersMarketRegister/main.py
 
 #change the working directory to FarmersMarketRegister folder
 WORKDIR /home/farmersmarket/FarmersMarketRegister
